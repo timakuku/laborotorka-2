@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sample document</title>
+    </head>
+    <body>
+
+        <div>
+            <p>прямой наследник(первый уровень)</p>
+            <span>
+                <span>
+                    <p>третий уровень</p>
+                </span>
+            </span>
+            <p>прямой наследник (первый уровень)</p>
+            <span>
+                <p style="background-color: yellow; color:blue;">второй уровень</p>
+            </span>
+            <p>прямой наследник (первый уровень)</p>
+        </div>
+    </body>
+</html>
+<style>
+    div{
+        width: 200px;
+        margin: 10px;
+        float: left;
+        color: blue;
+    }
+    .p{
+        color: red;
+    }
+    #first{
+        color: orange;
+    }
+    .div p {
+        background-color: yellow;
+    }
+    div>p{
+        background-color: orchid;
+    }
+
+</style>
